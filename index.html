@@ -2,70 +2,91 @@
 <html>
 
   <head>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-
+    <meta http-equiv="Default-Style" content="yellow">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/white.css" rel="alternate stylesheet" type="text/css" title="white">
+    <link href="styles/yellow.css" rel="stylesheet" type="text/css" title="yellow">
+    <link href="styles/gold.css" rel="alternate stylesheet" type="text/css" title="gold">    
+    <title>Let's Ram It!</title>
   </head>
 
   <body>
+
     <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="#">LA RAMS</a></li>
-          <li><a href="#">History</a></li>
-        </ul>
-        <ul class="pull-right">
-          <li><a href="#">The Move</a></li>
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Themes</a></li>
-        </ul>
-      </div>
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="lri.html">LRI</a></li>
+      </ul>
+      <ul class="pull-right">
+        <li><a href="#">History</a></li>
+        <li><a href="#">The Move</a></li>
+        <li><a href="#">Championships</a></li>
+        <li><a href="#">Themes</a>
+          <ul>
+            <li><a href="javascript:switch_style('white')">Throwback</a></li>
+            <li><a href="javascript:switch_style('yellow')">Classic</a></li>
+            <li><a href="javascript:switch_style('gold')">Millennium</a></li>
+          </ul></li>
+      </ul>
+    </div>
     </div>
 
     <div class="jumbotron">
-      <div class="container">
-        <h1>Welcome back to Los Angeles</h1>
-        <p>After 20 years away the Rams are back home.</p>
-        <a href="#">Learn More</a>
-      </div>
-    </div> 
+    <div class="top">
+      <h1>Let's Ram It</h1>
+    </div>
+    <div class="bottom">
+      <p>After 20 years the Rams are back home.</p>
+      <a href="#">Learn more about the move to LA...</a>
+    </div>  
+    </div>
+    </div>
 
-    <div class="neighborhood-guides">
-      <div class="container">
-        <h2>Fun Pics of the Past</h2>
-        <p>Going back to the old days.</p>
+    <div class="gallery">
+    <div class="container">
+      <h2>Fun Pics of the Past</h2>
+      <p>Going back to the old days.</p>
         <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <img src="http://ddotomen.com/wp-content/uploads/los-angeles-rams.jpg">
-            </div>  
-            <div class="thumbnail">
-              <img src="http://static.nfl.com/static/content/catch_all/nfl_image/j_everett_061011_top.jpg">
-            </div>  
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Rams_uniform_evolution.png">
-            </div>  
-            <div class="thumbnail">
-              <img src="http://www.grayflannelsuit.net/blog/wp-content/uploads/2012/08/los-angeles-rams-logo.jpg">
-            </div> 
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <img src="http://www.stadiumsofprofootball.com/past/images/lacol_top.jpg">
-            </div> 
-          </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/1.png">
+          </div>  
+          <div class="thumbnail">
+            <img src="images/2.png">
+          </div>  
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/3.png">
+          </div>  
+          <div class="thumbnail">
+            <img src="images/4.png">
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/5.png">
+          </div>  
+          <div class="thumbnail">
+            <img src="images/6.png">
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/7.png">
+          </div>  
+          <div class="thumbnail">
+            <img src="images/8.png">
+          </div> 
+        </div>
         </div>  
-      </div>  
-    </div>       
+    </div>  
+    </div>  
 
-
-
-    <div class="learn-more">
-      <div class="container">
+    <div class="cities">
+    <div class="container">
         <div class="row">
           <div class="col-md-4">
             <h3>Cleveland</h3>
@@ -85,5 +106,16 @@
         </div>
       </div>
     </div>
+
+    <div class="footer">
+    <div class="container">
+      <p>Let's Ram It is a project created by DevSars and is for entertainment purposes.</p>
+      <p><a href="#">Legal</a> | <a href="#">Contact</a> | <a href="#">Change User Name</a></p>
+    </div>
+    </div>
+
+    <script src="scripts/themeswitch.js"></script>
+
   </body>
+
 </html>

@@ -1,0 +1,23 @@
+.jumbotron {
+  height: 600px;
+  /* background color img repeat attachment position*/
+  background: #0a377b url("../images/jumbotron_white.png") no-repeat scroll center;
+  background-size: 600px;
+}
+
+.jumbotron h1 {
+  color: #ffffff;
+}
+
+.jumbotron p {
+  color: #ffffff;
+}
+
+.bottom a {
+  color: #ffffff;
+}
+
+.lri {
+  height: 600px;
+  background: #0a377b;
+}

@@ -1,3 +1,7 @@
+.nav {
+	background: #efefef;
+}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -10,55 +14,104 @@
   display: inline;
 }
 
-.jumbotron {
-  background-image:url('http://vignette1.wikia.nocookie.net/prosportsteams/images/4/48/Los_Angeles_Rams.jpg');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.nav ul ul {
+	display: none;
 }
 
-.jumbotron .container {
+.nav ul li:hover > ul {
+	display: block;
+	}
+
+.jumbotron {
+  height: 600px;
+  /* background color img repeat attachment position*/
+  background: #0a377b url("../images/jumbotron_yellow.png") no-repeat scroll center;
+  background-size: 600px;
+}
+
+.jumbotron .top {
   position: relative;
-  top:100px;
+  top: 50px;
+}
+
+.jumbotron .bottom {
+  position: relative;
+  top: 350px;
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: #fcc312;
   font-size: 48px;  
-  font-family: 'Shift', sans-serif;
+  font-family: 'Signika', sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
 .jumbotron p {
   font-size: 20px;
-  color: #fff;
+  font-family: 'Signika', sans-serif;
+  color: #fcc312;
+  text-align: center;
 }
 
-.learn-more {
-  background-color: #f7f7f7;
+.bottom a {
+  font-size: 20px;
+  font-family: 'Signika', sans-serif;
+  color: #fcc312;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #00b0ff;
-}
-
-.neighborhood-guides {
+.gallery {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
 }
 
-.neighborhood-guides h2 {
+.gallery h2 {
+  font-family: 'Signika', sans-serif;
   color: #393c3d;
   font-size: 24px;
 }
 
-.neighborhood-guides p {
+.gallery p {
   font-size: 15px;
   margin-bottom: 13px;
+}
+
+.cities {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.cities h3 {
+  font-family: 'Signika', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cities a {
+  color: #00b0ff;
+}
+
+.footer {
+  background-color: #efefef;
+  padding-top: 10px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.lri {
+  height: 600px;
+  background: #0a377b;
+}
+
+.youtube {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
