@@ -1,5 +1,5 @@
 .nav {
-	background: #efefef;
+  background: #efefef;
 }
 
 .nav a {
@@ -15,18 +15,68 @@
 }
 
 .nav ul ul {
-	display: none;
+  display: none;
 }
 
-.nav ul li:hover > ul {
-	display: block;
-	}
+.dropdown-menu {
+  background: #efefef;
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+/* Dropdown 
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+} */
+
+
 
 .jumbotron {
   height: 600px;
-  /* background color img repeat attachment position*/
-  background: #0a377b url("../images/jumbotron_yellow.png") no-repeat scroll center;
+  background-color: #0a377b; 
+  background-image: url("../images/jumbotron_yellow.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 600px;
+}
+
+.whitetron {
+  background-color: #0a377b; 
+  background-image: url("../images/jumbotron_white.png");
+}
+
+.yellowtron {
+  background-color: #0a377b; 
+  background-image: url("../images/jumbotron_yellow.png");
+}
+
+.goldtron {
+  background-color: #13264b; 
+  background-image: url("../images/jumbotron_gold.png");
+}
+
+.white h1, p, a {
+  color: #ffffff;
+}
+
+.yellow {
+  color: #fcc312;
+}
+
+.gold {
+  color: #d4bf86;
 }
 
 .jumbotron .top {

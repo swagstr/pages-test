@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="styles/yellow.css" rel="stylesheet" type="text/css">
+<!-- Trying to switch themes; white theme works; won't stick <script>
+// Check browser support
+ if (localStorage.theme == "white") {
+    // Store
+    $('link').attr('href', 'styles/white.css');
+    // Retrieve
+} elseif (localStorage.theme == "gold") {
+    $('link').attr('href', 'styles/white.css');
+}
+  else
+      $('link').attr('href', 'styles/yellow.css');
+</script> -->
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="#" class="logo-icon">
+          <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/logo.png">
+        </a>
+
+        <ul class="menu">
+          <li><a href="#">Get the App</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Magazines</a></li>
+          <li><a href="#">Web Tools</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Careers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Themes <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a class="colorwhite" href="?theme=white">White</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Maps Blog</a></li>
+              <li><a href="#">Eng Blog</a></li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Publishers</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="slider">
+
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Flipboard Is Your Personal Magazine</h1>
+              <p>It's a single place to discover, collect and share the news you care about.  Add your favorite social networks, publications and blogs to stay connected to the topics and people closest to you.</p>
+              
+              <ul class="get-app">
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+              </ul>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/home.png" width="540px">
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="slide slide-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/cnn.png"></a>
+              <a href="#">Read Now</a>
+            </div>
+            
+          </div>
+        </div>      
+      </div> 
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Enjoy Flipboard Magazines</h1>
+              <h2>on the Web</h2>
+              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines on any topic imaginable. Now magazines created by our readers, from Dali to End Trafficking, can be shared and enjoyed on the Web by anyone, anywhere.</p>
+              
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/magazines.png">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Badges & Widgets</h1>
+              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines. Now you can promote the ones you create or think are awesome.</p>
+              
+              <ul class="get-app">
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+              </ul>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/bw.png" width="540px">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+    </div>
+
+    <div class="slider-nav">
+      <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+      <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+    </div> -->
+
+    <div class="jumbotron">
+    <div class="top">
+      <h1>Let's Ram It</h1>
+    </div>
+    <div class="bottom">
+      <p>After 20 years the Rams are back home.</p>
+      <a href="#">Learn more about the move to LA...</a>
+    </div>
+    </div>
+
+    <div class="gallery">
+     <div class="container">
+        <h2>Fun Pics of the Past</h2>
+        <p>Going back to the old days.</p>
+       <div class="row">
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/1.png" alt="LRI">
+          </div>  
+          <div class="thumbnail">
+            <img src="images/2.png" alt="LRI">
+          </div>  
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/3.png" alt="LRI">
+          </div>
+          <div class="thumbnail">
+            <img src="images/4.png" alt="LRI">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/5.png" alt="LRI">
+          </div>
+          <div class="thumbnail">
+            <img src="images/6.png" alt="LRI">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="images/7.png" alt="LRI">
+          </div>
+          <div class="thumbnail">
+            <img src="images/8.png" alt="LRI">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cities">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Cleveland</h3>
+            <p>Home of the Rams for the first nine seasons.</p>
+            <p><a href="#">Learn more...</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Los Angeles</h3>
+            <p>Home of the Rams from 1946-1994.</p>
+            <p><a href="#">Learn more...</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>St. Louis</h3>
+            <p>Home of the Rams for the past two decades.</p>
+            <p><a href="#">Learn more...</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+    <div class="container">
+      <p>Let's Ram It is a project created by DevSars and is for entertainment purposes.</p>
+      <p><a href="#">Legal</a> | <a href="#">Contact</a> | <a href="#">Change User Name</a></p>
+    </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://github.com/carhartl/jquery-cookie/blob/master/src/jquery.cookie.js"></script>
+  </body>
+</html>

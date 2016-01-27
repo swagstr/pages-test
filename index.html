@@ -4,11 +4,14 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <meta http-equiv="Default-Style" content="yellow">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="styles/white.css" rel="alternate stylesheet" type="text/css" title="white">
-    <link href="styles/yellow.css" rel="stylesheet" type="text/css" title="yellow">
-    <link href="styles/gold.css" rel="alternate stylesheet" type="text/css" title="gold">    
+<!--    <link href="styles/white.css" rel="alternate stylesheet" type="text/css" title="white"> -->
+<!--    <link href="styles/yellow.css" rel="alternate stylesheet" type="text/css" title="yellow"> -->
+<!--    <link href="styles/gold.css" rel="alternate stylesheet" type="text/css" title="gold"> -->
+<!-- <script>
+var styleFile = "style" + document.cookie.charAt(6) + ".css";
+document.writeln('<link rel="stylesheet" type="text/css" href="' + styleFile + '">');
+</script> -->
     <title>Let's Ram It!</title>
   </head>
 
@@ -23,12 +26,14 @@
         <li><a href="#">History</a></li>
         <li><a href="#">The Move</a></li>
         <li><a href="#">Championships</a></li>
-        <li><a href="#">Themes</a>
-          <ul>
-            <li><a href="javascript:switch_style('white')">Throwback</a></li>
-            <li><a href="javascript:switch_style('yellow')">Classic</a></li>
-            <li><a href="javascript:switch_style('gold')">Millennium</a></li>
-          </ul></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle">Themes</a>
+          <ul class="dropdown-menu">
+          <!-- id="myLink" href="#" onclick="MyFunction();return false;">link text</a> <a href="javascript:chooseStyle('none', 30)">Default style</a>-->
+            <li class="white"><a href="#">Throwback</a></li>
+            <li class="yellow"><a href="#">Classic</a></li>
+            <li class="gold"><a href="#">Millennium</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     </div>
@@ -40,50 +45,49 @@
     <div class="bottom">
       <p>After 20 years the Rams are back home.</p>
       <a href="#">Learn more about the move to LA...</a>
-    </div>  
     </div>
     </div>
 
     <div class="gallery">
-    <div class="container">
-      <h2>Fun Pics of the Past</h2>
-      <p>Going back to the old days.</p>
-        <div class="row">
+     <div class="container">
+        <h2>Fun Pics of the Past</h2>
+        <p>Going back to the old days.</p>
+       <div class="row">
         <div class="col-md-3">
           <div class="thumbnail">
-            <img src="images/1.png">
+            <img src="images/1.png" alt="LRI">
           </div>  
           <div class="thumbnail">
-            <img src="images/2.png">
+            <img src="images/2.png" alt="LRI">
           </div>  
         </div>
         <div class="col-md-3">
           <div class="thumbnail">
-            <img src="images/3.png">
-          </div>  
+            <img src="images/3.png" alt="LRI">
+          </div>
           <div class="thumbnail">
-            <img src="images/4.png">
-          </div> 
+            <img src="images/4.png" alt="LRI">
+          </div>
         </div>
         <div class="col-md-3">
           <div class="thumbnail">
-            <img src="images/5.png">
-          </div>  
+            <img src="images/5.png" alt="LRI">
+          </div>
           <div class="thumbnail">
-            <img src="images/6.png">
-          </div> 
+            <img src="images/6.png" alt="LRI">
+          </div>
         </div>
         <div class="col-md-3">
           <div class="thumbnail">
-            <img src="images/7.png">
-          </div>  
+            <img src="images/7.png" alt="LRI">
+          </div>
           <div class="thumbnail">
-            <img src="images/8.png">
-          </div> 
+            <img src="images/8.png" alt="LRI">
+          </div>
         </div>
-        </div>  
-    </div>  
-    </div>  
+      </div>
+    </div>
+    </div>
 
     <div class="cities">
     <div class="container">
@@ -114,7 +118,9 @@
     </div>
     </div>
 
-    <script src="scripts/themeswitch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="app.js"></script>
 
   </body>
 
