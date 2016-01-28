@@ -67,7 +67,7 @@
   background-image: url("../images/jumbotron_gold.png");
 }
 
-.white h1, p, a {
+.white {
   color: #ffffff;
 }
 

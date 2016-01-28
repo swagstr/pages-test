@@ -4,25 +4,31 @@ var main = function() {
   $('.dropdown-toggle').click(function() {
     $('.dropdown-menu').toggle();
   });
-  var themeColor = $.cookie("selected_class");
-  if (themeColor) {
+
+  var themeText = $.cookie("letters");
+  var themeImg = $.cookie("theme-img");
+
+  if (themeText) {
     //remove default "red" class and add cookie class
-    $('.jumbotron').removeClass("whitetron"||"goldtron"||"yellowtron").addClass(themeColor);
+    $('.top h1, .bottom p, .bottom a').addClass(themeText);
+    $('.yellowtron, .goldtron, .whitetron').removeClass.addClass(themeImg);
   }
 
-      if (themeColor === "whitetron") {
-      $('.jumbotron').removeClass('yellowtron');
-      $('.jumbotron').removeClass('goldtron');
+      if (themeText === "white") {
+      $('.yellowtron').toggleClass('whitetron');
+      $('.goldtron').toggleClass('whitetron');
       $('.jumbotron').addClass('whitetron');
-      $('.top h1, .bottom p, .bottom a').css("color", "#ffffff")
-      $.cookie("selected_class", "whitetron");
-    } else if (themeColor === "yellowtron") {
+      $('.top h1, .bottom p, .bottom a').addClass('white');
+      $.cookie("letters", "white");
+      $.cookie("theme-img", "whitetron")
+      alert($.cookie('letters') + " is set");
+    } else if (themeText === "yellow") {
       $('.jumbotron').removeClass('whitetron');
       $('.jumbotron').removeClass('goldtron');
       $('.jumbotron').addClass('yellowtron');
       $('.top h1, .bottom p, .bottom a').css("color", "#fcc312")
       $.cookie("selected_class", "yellowtron");
-    } else if (themeColor === "goldtron") {
+    } else if (themeText === "gold") {
       $('.jumbotron').removeClass('yellowtron');
       $('.jumbotron').removeClass('whitetron');
       $('.jumbotron').addClass('goldtron');
